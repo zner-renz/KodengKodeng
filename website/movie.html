@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Detail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- reuse the same header -->
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="logo">
+            <a href="indexx.html" class="nav-link nav-link-active">PirateFlix</a>
+            </div>
+       <!-- <div class="search-wrap">
+          <input class="search-input" placeholder="Search movies, shows, actors...">
+        </div> -->
+        <nav class="main-nav">
+          <a href="indexx.html" class="nav-link nav-link-active">Movies</a>
+          <a href="meetteam.html" class="nav-link">The Team</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="movie-layout">
+          <div class="movie-hero-banner" id="heroBanner"></div>
+  <!-- Top hero row -->
+  <section class="movie-hero">
+    <div class="movie-hero-left">
+      <img id="detailPoster" class="movie-hero-poster" src="" alt="">
+    </div>
+
+    <div class="movie-hero-right">
+      <h1 id="detailTitle" class="movie-hero-title">Fantastic 4</h1>
+      <p id="detailMeta" class="movie-hero-meta">
+        2025 · 2h 10m · Action, SciFi, Superhero
+      </p>
+
+      <div class="movie-scores">
+        <div class="score-box">
+          <div class="score-label">Critic Score</div>
+          <div id="detailCritic" class="score-value">7.2/10</div>
+        </div>
+        <div class="score-box">
+          <div class="score-label">Audience Score</div>
+          <div id="detailAudience" class="score-value">88%</div>
+        </div>
+      </div>
+
+      <p id="detailDescription" class="movie-hero-description">
+        Marvels First Family faces a cosmic threat while learning to work together as a team.
+      </p>
+
+      <div id="detailTrailer"></div>
+    </div>
+  </section>
+
+  <!-- Tabs row -->
+  <nav class="movie-tabs">
+    <button class="movie-tab movie-tab-active">Overview</button>
+
+  </nav>
+
+  <!-- Two-column body like Rotten Tomatoes -->
+  <section class="movie-body">
+    <!-- Left column: big sections -->
+    <div class="movie-body-main">
+      <section class="movie-section" id="whereToWatch">
+        <h2>Where To Watch</h2>
+        <p id="detailWhere">Streaming and ticket info will go here.</p>
+      </section>
+
+      <section class="movie-section" id="whatToKnow">
+        <h2>What To Know</h2>
+        <p id="detailConsensus">
+          Critic consensus, highlights, and longer review text.
+        </p>
+      </section>
+
+      <section class="movie-section" id="cast">
+        <h2>Cast &amp; Crew</h2>
+        <ul id="detailCast" class="cast-list">
+          <!-- filled from JS: <li>Actor — Role</li> -->
+        </ul>
+      </section> 
+    </div>
+
+    <!-- Right column: side “What to Watch” style list -->
+   <!-- <aside class="movie-sidebar">
+      <h3>What to Watch</h3>
+      <ul class="sidebar-list" id="sidebarNowPlaying">
+        <li>Movie A</li>
+        <li>Movie B</li>
+        <li>Movie C</li> -->
+      </ul>
+    </aside>    
+  </section>
+</main>
+
+<script src="movieDetail.js"></script>
+</body>
+</html>

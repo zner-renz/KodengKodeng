@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Movie Carousel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    
+    <!-- Top nav / header -->
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="logo">
+            <a href="indexx.html" class="nav-link nav-link-active">PirateFlix</a>
+        </div>
+
+
+       <!-- <div class="search-wrap">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search movies, shows, actors..."
+          
+        </div> -->
+
+        <nav class="main-nav">
+          <a href="indexx.html" class="nav-link nav-link-active">Movies</a>
+          <a href="meetteam.html" class="nav-link">The Team</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero section with background + carousel -->
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Now Trending Movies</h1>
+
+        <div class="carousel-container">
+          <div class="carousel" id="carousel">
+            <div class="item" data-title="Fantastic 4">
+              <img src="https://m.media-amazon.com/images/M/MV5BOGM5MzA3MDAtYmEwMi00ZDNiLTg4MDgtMTZjOTc0ZGMyNTIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Fantastic 4">
+              <div class="item-title">Fantastic 4</div>
+            </div>
+
+            <div class="item" data-title="Sinners">
+              <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2024/09/sinners-2025-poster.jpg" alt="Sinners">
+              <div class="item-title">Sinners</div>
+            </div>
+
+            <div class="item" data-title="Weapons">
+              <img src="https://www.dvd-trailers.gr/dvd/weapons_2025.jpg" alt="Weapons">
+              <div class="item-title">Weapons</div>
+            </div>
+
+            <div class="item" data-title="Chainsaw Man">
+              <img src="https://m.media-amazon.com/images/M/MV5BZmMzNGVhODktYmU5MS00MDg1LThlNTEtNTMyYTg5MDA0Njk4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Chainsaw Man">
+              <div class="item-title">Chainsaw Man</div>
+            </div>
+
+            <div class="item" data-title="Kpop Demon Hunters">
+              <img src="https://www.animeclick.it/immagini/anime/KPop_Demon_Hunter/cover/KPop_Demon_Hunter-cover.jpg" alt="Kpop Demon Hunters">
+              <div class="item-title">Kpop Demon Hunters</div>
+            </div>
+
+            <div class="item" data-title="Superman">
+              <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2025/05/superman-2025-poster.jpeg" alt="Superman">
+              <div class="item-title">Superman</div>
+            </div>
+
+            <div class="item" data-title="Good Will Hunting">
+              <img src="https://www.themoviedb.org/t/p/original/j9Z7P7BGHXn0I0uPiiyalC6efwe.jpg" alt="Good Will Hunting">
+              <div class="item-title">Good Will Hunting</div>
+            </div>
+
+            <div class="item" data-title="Little Women">
+              <img src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/littlwomen1994_onesheet_1400x2100.png?itok=GnH0F5mV" alt="Little Women">
+              <div class="item-title">Little Women</div>
+            </div>
+
+            <div class="item" data-title="Whiplash">
+              <img src="https://media-cache.cinematerial.com/p/500x/yjhxpdlm/whiplash-movie-cover.jpg?v=1456350025" alt="Whiplash">
+              <div class="item-title">Whiplash</div>
+            </div>
+
+            <div class="item" data-title="Fantastic Mr. Fox">
+              <img src="https://image.tmdb.org/t/p/original/aRUHnkFHd2EnbgDiflRAlQWsu4T.jpg" alt="Fantastic Mr. Fox">
+              <div class="item-title">Fantastic Mr. Fox</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Lower strip like “Movies in Theaters” -->
+<section class="strip">
+  <div class="strip-header">
+    <h2>Movies in Theaters</h2>
+  </div>
+
+  <div class="strip-row">
+    <div class="strip-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIr2JR4c2EJBelkbBGlQoxEwBiMjaGdJjCw&s" alt="Five Nights at Freddy's 2">
+      <span class="strip-title">Five Nights at Freddy's 2</span>
+    </div>
+
+    <div class="strip-card">
+      <img src="https://cdn1.clickthecity.com/images/movies/poster/400/21042.jpg" alt="Ang Happy Homes ni Diane Hilario">
+      <span class="strip-title">Ang Happy Homes ni Diane Hilario</span>
+    </div>
+
+    <div class="strip-card">
+      <img src="https://cdn1.clickthecity.com/images/movies/poster/400/20971_1.jpg" alt="Eternity">
+      <span class="strip-title">Eternity</span>
+    </div>
+
+    <div class="strip-card">
+      <img src="https://cdn1.clickthecity.com/images/movies/poster/400/21025.jpg" alt="JUJUTSU KAISEN: Execution -Shibuya Incident x The Culling Game Begins-">
+      <span class="strip-title">JUJUTSU KAISEN: Execution -Shibuya Incident x The Culling Game Begins-</span>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Modal -->
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+
+      </div>
+
+      <img id="modalPoster" class="modal-poster" alt="Movie poster">
+
+      <p class="modal-meta">
+        <span id="modalYear"></span> ·
+        <span id="modalDuration"></span> ·
+        <span id="modalRating"></span>
+      </p>
+      <p class="modal-meta" id="modalGenres"></p>
+
+      <p id="modalDescription" class="modal-description"></p>
+
+      <div id="modalTrailer"></div>
+    </div>
+  </div>
+
+  <script src="carousel.js"></script>
+</body>
+</html>
